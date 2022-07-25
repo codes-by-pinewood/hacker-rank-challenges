@@ -1,4 +1,4 @@
-//prints "hello world"
+//Prints "hello world and string s to stdout
 
 #include <stdio.h>
 #include <string.h>
@@ -9,10 +9,10 @@ int main()
 {
 	
     char s[100];
-    scanf("%s", &s);
-    printf("Hello, World! ");
-    printf("%s", s);
-  	
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    fgets(s, 100, stdin);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    printf("Hello, World!\n");   
+   printf("%s", s);
+
     return 0;
 }
